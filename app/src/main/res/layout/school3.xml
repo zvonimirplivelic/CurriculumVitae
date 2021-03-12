@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tvDurationEducation3"
+        style="@style/TextViewDuration"
+        android:text="September 2004 - May 2009"
+        app:layout_constraintBottom_toBottomOf="@id/tvSchoolName3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tvSchoolName3"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="September 2004 - May 2009" />
+        app:layout_constraintTop_toTopOf="@id/tvSchoolName3" />
 
     <TextView
         android:id="@+id/tvSchoolName3"
+        style="@style/CardViewName"
+        android:text="High School Sesvete"
         app:layout_constraintLeft_toRightOf="@id/tvDurationEducation3"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="High School Sesvete" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDescriptionEducation3"
+        style="@style/CardViewDescription"
+        android:text="Computer technician"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDurationEducation3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
-        android:layout_marginLeft="16dp"
-        android:text="Computer technician" />
+        app:layout_constraintTop_toBottomOf="@id/tvDurationEducation3" />
 
     <TextView
         android:id="@+id/tvSkillsEducation3"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
         android:layout_marginLeft="16dp"
-        android:text=" • Basics of programming\n • Working with MS Office tools\n • Computer networks\n • Electronic elements and circuits\n • Digital electronics\n • Manufacturing circuit boards" />
+        android:text="Skills learned:\n • Basics of programming\n • Working with MS Office tools\n • Computer networks\n • Electronic elements and circuits\n • Digital electronics\n • Manufacturing circuit boards"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

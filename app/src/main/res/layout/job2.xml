@@ -1,50 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/tvDurationJob2"
+        style="@style/TextViewDuration"
+        android:text="June 2019 - September 2019"
+        app:layout_constraintBottom_toBottomOf="@id/tvNameJob2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tvNameJob2"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="June 2019 - September 2019" />
+        app:layout_constraintTop_toTopOf="@id/tvNameJob2" />
 
     <TextView
         android:id="@+id/tvNameJob2"
+        style="@style/CardViewName"
+        android:text="Lidl Croatia Ltd."
         app:layout_constraintLeft_toRightOf="@id/tvDurationJob2"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Lidl Croatia Ltd." />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDescriptionJob2"
+        style="@style/CardViewDescription"
+        android:text="Shop clerk"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDurationJob2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
-        android:layout_marginStart="16dp"
-        android:text="Shop clerk" />
+        app:layout_constraintTop_toBottomOf="@id/tvDurationJob2" />
 
     <TextView
         android:id="@+id/tvSkillsEducation2"
+        style="@style/CardViewDetails"
+        android:text="Responsibilities:\n  • Working on cash registry\n • Maintaining hygiene within store\n • Assisting customers\n • Warehouse related jobs"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionJob2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginVertical="8dp"
-        android:layout_marginStart="16dp"
-        android:text=" • Working on cash registry\n • Maintaining hygiene within store\n • Assisting customers\n • Warehouse related jobs" />
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionJob2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

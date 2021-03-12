@@ -26,46 +26,34 @@
 
         <TextView
             android:id="@+id/textViewName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Name: Zvonimir Plivelić"
-            android:textColor="@color/black"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imageViewProfile" />
+            app:layout_constraintTop_toBottomOf="@id/imageViewProfile"
+            style="@style/PersonalInformationText" />
 
         <TextView
             android:id="@+id/textViewAddress"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Address: Golska 21, 10040 Zagreb"
-            android:textColor="@color/black"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewName" />
+            app:layout_constraintTop_toBottomOf="@id/textViewName"
+            style="@style/PersonalInformationText" />
 
         <TextView
             android:id="@+id/textViewPhone"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Phone: +385955495228"
-            android:textColor="@color/black"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewAddress" />
+            app:layout_constraintTop_toBottomOf="@id/textViewAddress"
+            style="@style/PersonalInformationText" />
 
         <TextView
             android:id="@+id/textViewEmail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
             android:text="Email: zvonimirplivelic91@gmail.com"
-            android:textColor="@color/black"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/textViewPhone" />
+            app:layout_constraintTop_toBottomOf="@id/textViewPhone"
+            style="@style/PersonalInformationText" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
