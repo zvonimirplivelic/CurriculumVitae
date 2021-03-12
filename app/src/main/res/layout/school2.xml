@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvDurationEducation2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="2009 - 2017"
+        app:layout_constraintBottom_toBottomOf="@id/tvSchoolName2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvSchoolName2"
+        app:layout_constraintTop_toTopOf="@id/tvSchoolName2" />
+
+    <TextView
+        android:id="@+id/tvSchoolName2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Faculty of transport and traffic science,\nUniversity of Zagreb"
+        app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation2"
+        app:layout_constraintLeft_toRightOf="@id/tvDurationEducation2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescriptionEducation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text="Master in urban traffic and transport engineering"
+        app:layout_constraintBottom_toTopOf="@id/tvSkillsEducation2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDurationEducation2" />
+
+    <TextView
+        android:id="@+id/tvSkillsEducation2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginStart="16dp"
+        android:text=" • Managing traffic in urban environment\n • Managing transport demand in urban environment\n • Intelligent transport systems\n • Road transport telematics\n • Traffic system planing in urban environment"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

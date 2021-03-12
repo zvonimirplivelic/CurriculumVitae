@@ -5,46 +5,46 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <TextView
-        android:id="@+id/tvDurationJob1"
+        android:id="@+id/tvDurationEducation3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/tvJobName1"
+        app:layout_constraintRight_toLeftOf="@id/tvSchoolName3"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="November 2019 - Present" />
+        android:text="September 2004 - May 2009" />
 
     <TextView
-        android:id="@+id/tvJobName1"
-        app:layout_constraintLeft_toRightOf="@id/tvDurationJob1"
+        android:id="@+id/tvSchoolName3"
+        app:layout_constraintLeft_toRightOf="@id/tvDurationEducation3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:text="Noky Security" />
+        android:text="High School Sesvete" />
 
     <TextView
-        android:id="@+id/tvDescriptionEducation1"
+        android:id="@+id/tvDescriptionEducation3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDurationJob1"
+        app:layout_constraintTop_toBottomOf="@id/tvDurationEducation3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
-        android:layout_marginStart="16dp"
-        android:text="Security center dispatcher" />
+        android:layout_marginLeft="16dp"
+        android:text="Computer technician" />
 
     <TextView
-        android:id="@+id/tvSkillsEducation1"
+        android:id="@+id/tvSkillsEducation3"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation1"
+        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginVertical="8dp"
-        android:layout_marginStart="16dp"
-        android:text=" • Maintenance of documentation\n • Interaction with clients and technicians\n • Dispatching intervening teams\n • Dispatching emergency services\n • Tracking alarm systems and video surveillance\n • Maintenace of alarm systems" />
+        android:layout_marginLeft="16dp"
+        android:text=" • Basics of programming\n • Working with MS Office tools\n • Computer networks\n • Electronic elements and circuits\n • Digital electronics\n • Manufacturing circuit boards" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
