@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/cardViewEducation"
+    android:id="@+id/workExperienceCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -11,17 +11,17 @@
         android:layout_marginVertical="16dp">
 
         <TextView
-            android:id="@+id/educationTitle"
+            android:id="@+id/workExperienceTitle"
             style="@style/CardViewTitle"
             android:text="Work Experience"
-            app:layout_constraintBottom_toBottomOf="@id/educationImageButton"
-            app:layout_constraintEnd_toStartOf="@+id/educationImageButton"
+            app:layout_constraintBottom_toBottomOf="@id/workExperienceImageButton"
+            app:layout_constraintEnd_toStartOf="@+id/workExperienceImageButton"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/educationImageButton" />
+            app:layout_constraintTop_toTopOf="@id/workExperienceImageButton" />
 
         <ImageButton
-            android:id="@+id/educationImageButton"
+            android:id="@+id/workExperienceImageButton"
             style="@style/CardViewImageButton"
             android:src="@drawable/ic_down"
             app:layout_constraintEnd_toEndOf="parent"
@@ -30,10 +30,12 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
+            android:id="@+id/expandableWorkExperience"
             style="@style/CardViewLinearLayout"
+            android:visibility="gone"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/educationTitle">
+            app:layout_constraintTop_toBottomOf="@id/workExperienceTitle">
 
             <include layout="@layout/job1" />
 

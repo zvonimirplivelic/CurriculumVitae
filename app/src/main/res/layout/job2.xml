@@ -33,7 +33,7 @@
     <TextView
         android:id="@+id/tvSkillsEducation2"
         style="@style/CardViewDetails"
-        android:text="Responsibilities:\n  • Working on cash registry\n • Maintaining hygiene within store\n • Assisting customers\n • Warehouse related jobs"
+        android:text="Responsibilities:\n • Working on cash registry\n • Maintaining hygiene within store\n • Assisting customers\n • Warehouse related jobs"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescriptionJob2" />

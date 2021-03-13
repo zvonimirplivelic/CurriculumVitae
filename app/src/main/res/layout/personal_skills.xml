@@ -2,58 +2,62 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/cardViewPersonalSkills"
+    android:id="@+id/personalSkillsCard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_marginVertical="16dp"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginVertical="16dp">
 
         <TextView
             android:id="@+id/personalSkillsTitle"
-            android:text="Education"
+            style="@style/CardViewTitle"
+            android:text="Personal Skills"
             app:layout_constraintBottom_toBottomOf="@id/personalSkillsImageButton"
             app:layout_constraintEnd_toStartOf="@+id/personalSkillsImageButton"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/personalSkillsImageButton"
-            tools:ignore="RtlSymmetry"
-            style="@style/CardViewTitle" />
+            tools:ignore="RtlSymmetry" />
 
         <ImageButton
             android:id="@+id/personalSkillsImageButton"
+            style="@style/CardViewImageButton"
             android:src="@drawable/ic_down"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/personalSkillsTitle"
-            app:layout_constraintTop_toTopOf="parent"
-            style="@style/CardViewImageButton" />
+            app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/personalSkillsLanguages"
-            android:text="Mother language: Croatian\nForeign language: English"
+        <LinearLayout
+            android:id="@+id/expandablePersonalSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/personalSkillsTitle"
-            style="@style/CardViewDetails" />
+            app:layout_constraintTop_toBottomOf="@id/personalSkillsTitle">
 
-        <TextView
-            android:id="@+id/personalSkillsDigitalSkills"
-            android:text="Digital skills:\n • MS Office tools\n • Java\n • Kotlin\n • Git VCS"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/personalSkillsLanguages"
-            style="@style/CardViewDetails" />
+            <TextView
+                android:id="@+id/personalSkillsLanguages"
+                style="@style/CardViewDetails"
+                android:text="Mother language: Croatian\nForeign language: English" />
 
-        <TextView
-            android:id="@+id/personalSkillsOther"
-            android:text="Other skills and hobbies:\n • Fitness\n • Drivers licence(AM, B)"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/personalSkillsDigitalSkills"
-            style="@style/CardViewDetails" />
+            <TextView
+                android:id="@+id/personalSkillsDigitalSkills"
+                style="@style/CardViewDetails"
+                android:text="Digital skills:\n • MS Office tools\n • Java\n • Kotlin\n • Git VCS" />
+
+            <TextView
+                android:id="@+id/personalSkillsOther"
+                style="@style/CardViewDetails"
+                android:text="Other skills and hobbies:\n • Fitness\n • Drivers licence(AM, B)" />
+
+        </LinearLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

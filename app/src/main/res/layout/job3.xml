@@ -33,7 +33,7 @@
     <TextView
         android:id="@+id/tvSkillsJob3"
         style="@style/CardViewDetails"
-        android:text="Responsibilities:\n  • Web application development\n • Working with variuous tools:\n     • ReactJS\n     • NodeJS\n     • Docker\n     • Git"
+        android:text="Responsibilities:\n • Web application development\n • Working with variuous tools:\n     • ReactJS\n     • NodeJS\n     • Docker\n     • Git"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescriptionJob3" />
