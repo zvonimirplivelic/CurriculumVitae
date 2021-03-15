@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/workExperienceCard"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_primary_variant"
+    app:cardCornerRadius="16dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +15,7 @@
         <TextView
             android:id="@+id/workExperienceTitle"
             style="@style/CardViewTitle"
-            android:text="Work Experience"
+            android:text="@string/card_view_work_experience_title"
             app:layout_constraintBottom_toBottomOf="@id/workExperienceImageButton"
             app:layout_constraintEnd_toStartOf="@+id/workExperienceImageButton"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -23,10 +25,11 @@
         <ImageButton
             android:id="@+id/workExperienceImageButton"
             style="@style/CardViewImageButton"
+            android:contentDescription="@string/work_experience_expand_button"
             android:src="@drawable/ic_down"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/educationTitle"
+            app:layout_constraintStart_toEndOf="@+id/workExperienceTitle"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout

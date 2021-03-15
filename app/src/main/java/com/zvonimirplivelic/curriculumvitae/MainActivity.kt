@@ -22,44 +22,36 @@ class MainActivity : AppCompatActivity() {
         val educationExpandable: LinearLayout = findViewById(R.id.expandableEducation)
         val personalSkillsExpandable: LinearLayout = findViewById(R.id.expandablePersonalSkills)
 
-        val workExperienceCardButton: ImageButton = findViewById(R.id.workExperienceImageButton)
-        val educationCardButton: ImageButton = findViewById(R.id.educationImageButton)
-        val personalSkillsCardButton: ImageButton = findViewById(R.id.personalSkillsImageButton)
+        val workExperienceImageButton: ImageButton = findViewById(R.id.workExperienceImageButton)
+        val educationCardImageButton: ImageButton = findViewById(R.id.educationImageButton)
+        val personalSkillsCardImageButton: ImageButton = findViewById(R.id.personalSkillsImageButton)
 
-        workExperienceCardButton.setOnClickListener {
-            if (workExperienceExpandable.visibility == View.GONE) {
-                TransitionManager.beginDelayedTransition(workExperienceCard, AutoTransition())
-                workExperienceExpandable.visibility = View.VISIBLE
-                workExperienceCardButton.setImageResource(R.drawable.ic_up)
-            } else {
-                TransitionManager.beginDelayedTransition(workExperienceCard, AutoTransition())
-                workExperienceExpandable.visibility = View.GONE
-                workExperienceCardButton.setImageResource(R.drawable.ic_down)
-            }
+        workExperienceImageButton.setOnClickListener {
+            expandCardView(workExperienceImageButton, workExperienceExpandable, workExperienceCard)
         }
 
-        educationCardButton.setOnClickListener {
-            if (educationExpandable.visibility == View.GONE) {
-                TransitionManager.beginDelayedTransition(educationCard, AutoTransition())
-                educationExpandable.visibility = View.VISIBLE
-                educationCardButton.setImageResource(R.drawable.ic_up)
-            } else {
-                TransitionManager.beginDelayedTransition(educationCard, AutoTransition())
-                educationExpandable.visibility = View.GONE
-                educationCardButton.setImageResource(R.drawable.ic_down)
-            }
+        educationCardImageButton.setOnClickListener {
+            expandCardView(educationCardImageButton, educationExpandable, educationCard)
         }
 
-        personalSkillsCardButton.setOnClickListener {
-            if (personalSkillsExpandable.visibility == View.GONE) {
-                TransitionManager.beginDelayedTransition(personalSkillsCard, AutoTransition())
-                personalSkillsExpandable.visibility = View.VISIBLE
-                personalSkillsCardButton.setImageResource(R.drawable.ic_up)
-            } else {
-                TransitionManager.beginDelayedTransition(personalSkillsCard, AutoTransition())
-                personalSkillsExpandable.visibility = View.GONE
-                personalSkillsCardButton.setImageResource(R.drawable.ic_down)
-            }
+        personalSkillsCardImageButton.setOnClickListener {
+            expandCardView(personalSkillsCardImageButton, personalSkillsExpandable, personalSkillsCard)
+        }
+    }
+
+    private fun expandCardView(
+        expandButton: ImageButton,
+        expandableLayout: LinearLayout,
+        expandableCard: CardView
+    ) {
+        if (expandableLayout.visibility == View.GONE) {
+            TransitionManager.beginDelayedTransition(expandableCard, AutoTransition())
+            expandableLayout.visibility = View.VISIBLE
+            expandButton.setImageResource(R.drawable.ic_up)
+        } else {
+            TransitionManager.beginDelayedTransition(expandableCard, AutoTransition())
+            expandableLayout.visibility = View.GONE
+            expandButton.setImageResource(R.drawable.ic_down)
         }
     }
 }

@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/educationCard"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="16dp"
+    android:background="@color/design_default_color_primary_variant">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -13,7 +15,7 @@
         <TextView
             android:id="@+id/educationTitle"
             style="@style/CardViewTitle"
-            android:text="Education"
+            android:text="@string/card_view_education_title"
             app:layout_constraintBottom_toBottomOf="@id/educationImageButton"
             app:layout_constraintEnd_toStartOf="@+id/educationImageButton"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
@@ -23,6 +25,7 @@
         <ImageButton
             android:id="@+id/educationImageButton"
             style="@style/CardViewImageButton"
+            android:contentDescription="@string/education_expand_button"
             android:src="@drawable/ic_down"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"

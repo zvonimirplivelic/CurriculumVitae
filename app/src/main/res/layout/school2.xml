@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/tvDurationEducation2"
         style="@style/TextViewDuration"
-        android:text="2009 - 2017"
+        android:text="@string/education2_duration"
         app:layout_constraintBottom_toBottomOf="@id/tvSchoolName2"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -17,7 +17,7 @@
     <TextView
         android:id="@+id/tvSchoolName2"
         style="@style/CardViewName"
-        android:text="Faculty of transport and traffic science,\nUniversity of Zagreb"
+        android:text="@string/education2_name"
         app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation2"
         app:layout_constraintLeft_toRightOf="@id/tvDurationEducation2"
         app:layout_constraintRight_toRightOf="parent"
@@ -26,7 +26,7 @@
     <TextView
         android:id="@+id/tvDescriptionEducation2"
         style="@style/CardViewDescription"
-        android:text="Master in urban traffic and transport engineering"
+        android:text="@string/education2_description"
         app:layout_constraintBottom_toTopOf="@id/tvSkillsEducation2"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -35,9 +35,10 @@
     <TextView
         android:id="@+id/tvSkillsEducation2"
         style="@style/CardViewDetails"
-        android:text="Skills learned:\n • Managing traffic in urban environment\n • Managing transport demand in urban environment\n • Intelligent transport systems\n • Road transport telematics\n • Traffic system planing in urban environment"
+        android:text="@string/education2_skills"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

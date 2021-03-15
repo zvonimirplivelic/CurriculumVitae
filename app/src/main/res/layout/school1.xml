@@ -7,7 +7,7 @@
     <TextView
         android:id="@+id/tvDurationEducation1"
         style="@style/TextViewDuration"
-        android:text="May 2018 - March 2020"
+        android:text="@string/education1_duration"
         app:layout_constraintBottom_toBottomOf="@id/tvSchoolName1"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -17,25 +17,28 @@
     <TextView
         android:id="@+id/tvSchoolName1"
         style="@style/CardViewName"
-        android:text="Algebra, Zagreb"
+        android:text="@string/education1_name"
         app:layout_constraintLeft_toRightOf="@id/tvDurationEducation1"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvDescriptionEducation1"
         style="@style/CardViewDescription"
-        android:text="Mobile applications development"
+        android:text="@string/education1_description"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation1"
         app:layout_constraintTop_toBottomOf="@id/tvDurationEducation1" />
 
     <TextView
         android:id="@+id/tvSkillsEducation1"
         style="@style/CardViewDetails"
-        android:text="Skills learned:\n • Basics of Java for Android\n • Intro to Android programming\n • SQL for Android programming\n • Developing applications for Android platform\n • Graphics and game development basics"
+        android:text="@string/education1_skills"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

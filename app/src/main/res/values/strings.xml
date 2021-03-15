@@ -1,3 +1,60 @@
 <resources>
     <string name="app_name">CurriculumVitae</string>
+
+    <!--    Personal Information-->
+    <string name="personal_info_name">Name: Zvonimir Plivelić</string>
+    <string name="personal_info_address">Address: Golska 21, 10040 Zagreb</string>
+    <string name="personal_info_phone">Phone: +385955495228</string>
+    <string name="personal_info_email">Email: zvonimirplivelic91@gmail.com</string>
+
+    <!--    Work Experience-->
+    <string name="card_view_work_experience_title">Work Experience</string>
+    <string name="work_experience_expand_button">Work experience expand button</string>
+
+    <!--    Job1-->
+    <string name="job1_duration">November 2019 - Present</string>
+    <string name="job1_name">Noky Security</string>
+    <string name="job1_description">Security center dispatcher</string>
+    <string name="job1_responsibilities">Responsibilities:\n • Maintenance of documentation\n • Interaction with clients and technicians\n • Dispatching intervening teams\n • Dispatching emergency services\n • Tracking alarm systems and video surveillance\n • Maintenace of alarm systems</string>
+
+    <!--    Job2-->
+    <string name="job2_duration">June 2019 - September 2019</string>
+    <string name="job2_name">Lidl Croatia Ltd.</string>
+    <string name="job2_description">Shop clerk</string>
+    <string name="job2_responsibilities">Responsibilities:\n • Working on cash registry\n • Maintaining hygiene within store\n • Assisting customers\n • Warehouse related jobs</string>
+
+    <!--    Job3-->
+    <string name="job3_duration">September 2018 - March 2019</string>
+    <string name="job3_name">Oroundo Mobile</string>
+    <string name="job3_description">Web application developer</string>
+    <string name="job3_responsibilities">Responsibilities:\n • Web application development\n • Working with variuous tools:\n • ReactJS\n • NodeJS\n • Docker\n • Git</string>
+
+    <!--    Education-->
+    <string name="card_view_education_title">Education</string>
+    <string name="education_expand_button">Education expand button</string>
+
+    <!--    Education1 duration-->
+    <string name="education1_duration">May 2018 - March 2020</string>
+    <string name="education1_name">Algebra, Zagreb</string>
+    <string name="education1_description">Mobile applications development</string>
+    <string name="education1_skills">Skills learned:\n • Basics of Java for Android\n • Intro to Android programming\n • SQL for Android programming\n • Developing applications for Android platform\n • Graphics and game development basics</string>
+
+    <!--    Education2 duration-->
+    <string name="education2_duration">2009 - 2017</string>
+    <string name="education2_name">Faculty of transport and traffic science,\nUniversity of Zagreb</string>
+    <string name="education2_description">Master in urban traffic and transport engineering</string>
+    <string name="education2_skills">Skills learned:\n • Managing traffic in urban environment\n • Managing transport demand in urban environment\n • Intelligent transport systems\n • Road transport telematics\n • Traffic system planing in urban environment</string>
+
+    <!--    Education3 duration-->
+    <string name="education3_duration">September 2004 - May 2009</string>
+    <string name="education3_name">High School Sesvete</string>
+    <string name="education3_description">Computer technician</string>
+    <string name="education3_skills">Skills learned:\n • Basics of programming\n • Working with MS Office tools\n • Computer networks\n • Electronic elements and circuits\n • Digital electronics\n • Manufacturing circuit boards</string>
+
+    <!--    Personal skills-->
+    <string name="card_view_personal_skills_title">Personal Skills</string>
+    <string name="personal_skills_expand_button">Personal skills expand button</string>
+    <string name="personal_skills_languages">Native language: Croatian\nForeign language: English</string>
+    <string name="personal_skills_digital">Digital skills:\n • MS Office tools\n • Java\n • Kotlin\n • Git VCS</string>
+    <string name="personal_skills_other">Other skills and hobbies:\n • Fitness\n • Drivers licence(AM, B)</string>
 </resources>

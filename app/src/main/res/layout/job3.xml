@@ -5,37 +5,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvDurationJob3"
+        android:id="@+id/tvJobDuration3"
         style="@style/TextViewDuration"
-        android:text="September 2018 - March 2019"
-        app:layout_constraintBottom_toBottomOf="@id/tvNameJob3"
+        android:text="@string/job3_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tvJobName3"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/tvNameJob3"
-        app:layout_constraintTop_toTopOf="@id/tvNameJob3" />
+        app:layout_constraintRight_toLeftOf="@id/tvJobName3"
+        app:layout_constraintTop_toTopOf="@id/tvJobName3" />
 
     <TextView
-        android:id="@+id/tvNameJob3"
+        android:id="@+id/tvJobName3"
         style="@style/CardViewName"
-        android:text="Oroundo Mobile"
-        app:layout_constraintLeft_toRightOf="@id/tvDurationJob3"
+        android:text="@string/job3_name"
+        app:layout_constraintBottom_toTopOf="@id/tvJobDescription3"
+        app:layout_constraintLeft_toRightOf="@id/tvJobDuration3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvDescriptionJob3"
+        android:id="@+id/tvJobDescription3"
         style="@style/CardViewDescription"
-        android:text="Web application developer"
+        android:text="@string/job3_description"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDurationJob3" />
+        app:layout_constraintBottom_toTopOf="@id/tvJobResponsibilities3"
+        app:layout_constraintTop_toBottomOf="@id/tvJobDuration3" />
 
     <TextView
-        android:id="@+id/tvSkillsJob3"
+        android:id="@+id/tvJobResponsibilities3"
         style="@style/CardViewDetails"
-        android:text="Responsibilities:\n • Web application development\n • Working with variuous tools:\n     • ReactJS\n     • NodeJS\n     • Docker\n     • Git"
+        android:text="@string/job3_responsibilities"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionJob3" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvJobDescription3" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
