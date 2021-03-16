@@ -17,18 +17,29 @@
             android:id="@+id/collapsingToolbar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:background="@color/black"
+            app:contentScrim="@color/design_default_color_primary_variant"
             android:fitsSystemWindows="true"
-            app:layout_scrollFlags="scroll|snap|enterAlwaysCollapsed"
-            app:title="Zvonimir Plivelić">
+            app:title="Zvonimir Plivelić"
+            app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imageViewProfile"
+                android:layout_width="240dp"
+                android:layout_height="240dp"
+                android:layout_marginHorizontal="64dp"
+                android:scaleType="centerCrop"
+                app:layout_collapseMode="parallax"
+                android:src="@drawable/profilepic"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="2dp" />
 
 
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/design_default_color_primary_variant"
-                app:layout_collapseMode="pin"
-                app:titleTextColor="@color/black" />
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin" />
 
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
@@ -45,6 +56,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
+            <include layout="@layout/personal_information" />
 
             <include layout="@layout/work_experience" />
 
