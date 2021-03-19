@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvJobDuration2"
+        style="@style/TextViewDuration"
+        android:text="@string/job2_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tvJobName2"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvJobName2"
+        app:layout_constraintTop_toTopOf="@id/tvJobName2" />
+
+    <TextView
+        android:id="@+id/tvJobName2"
+        style="@style/CardViewName"
+        android:text="@string/job2_name"
+        app:layout_constraintLeft_toRightOf="@id/tvJobDuration2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvJobDescription2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvJobDescription2"
+        style="@style/CardViewDescription"
+        android:text="@string/job2_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvJobResponsibilities2"
+        app:layout_constraintTop_toBottomOf="@id/tvJobDuration2" />
+
+    <TextView
+        android:id="@+id/tvJobResponsibilities2"
+        style="@style/CardViewDetails"
+        android:text="@string/job2_responsibilities"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvJobDescription2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/educationCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginVertical="16dp">
+
+        <TextView
+            android:id="@+id/educationTitle"
+            style="@style/CardViewTitle"
+            android:text="@string/card_view_education_title"
+            app:layout_constraintBottom_toBottomOf="@id/educationImageButton"
+            app:layout_constraintEnd_toStartOf="@+id/educationImageButton"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/educationImageButton" />
+
+        <ImageButton
+            android:id="@+id/educationImageButton"
+            style="@style/CardViewImageButton"
+            android:contentDescription="@string/education_expand_button"
+            android:src="@drawable/ic_down"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/educationTitle"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/expandableEducation"
+            style="@style/CardViewLinearLayout"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/educationTitle">
+
+            <include layout="@layout/school1" />
+
+            <include layout="@layout/horizontal_divider" />
+
+            <include layout="@layout/school2" />
+
+            <include layout="@layout/horizontal_divider" />
+
+            <include layout="@layout/school3" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

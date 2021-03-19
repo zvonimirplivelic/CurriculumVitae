@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEducationDuration3"
+        style="@style/TextViewDuration"
+        android:text="@string/education3_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tvEducationName3"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvEducationName3"
+        app:layout_constraintTop_toTopOf="@id/tvEducationName3" />
+
+    <TextView
+        android:id="@+id/tvEducationName3"
+        style="@style/CardViewName"
+        android:text="@string/education3_name"
+        app:layout_constraintBottom_toTopOf="@id/tvEducationDescription3"
+        app:layout_constraintLeft_toRightOf="@id/tvEducationDuration3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEducationDescription3"
+        style="@style/CardViewDescription"
+        android:text="@string/education3_description"
+        app:layout_constraintBottom_toTopOf="@id/tvEducationSkills3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDuration3" />
+
+    <TextView
+        android:id="@+id/tvEducationSkills3"
+        style="@style/CardViewDetails"
+        android:text="@string/education3_skills"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDescription3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

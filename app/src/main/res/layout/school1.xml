@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvEducationDuration1"
+        style="@style/TextViewDuration"
+        android:text="@string/education1_duration"
+        app:layout_constraintBottom_toBottomOf="@id/tvEducationName1"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tvEducationName1"
+        app:layout_constraintTop_toTopOf="@id/tvEducationName1" />
+
+    <TextView
+        android:id="@+id/tvEducationName1"
+        style="@style/CardViewName"
+        android:text="@string/education1_name"
+        app:layout_constraintLeft_toRightOf="@id/tvEducationDuration1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvEducationDescription1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvEducationDescription1"
+        style="@style/CardViewDescription"
+        android:text="@string/education1_description"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tvEducationDescription1"
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDuration1" />
+
+    <TextView
+        android:id="@+id/tvEducationSkills1"
+        style="@style/CardViewDetails"
+        android:text="@string/education1_skills"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDescription1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
