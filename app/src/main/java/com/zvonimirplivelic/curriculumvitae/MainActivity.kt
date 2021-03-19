@@ -5,8 +5,6 @@ import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.RotateAnimation
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout

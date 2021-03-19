@@ -53,7 +53,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="64dp"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
 
         <LinearLayout
@@ -75,11 +75,12 @@
     <Button
         android:id="@+id/contactMeBtn"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:padding="8dp"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:elevation="4dp"
         android:text="@string/contact_me_btn"
         android:textColor="@color/black"
         android:layout_gravity="bottom"
-        android:textSize="24sp" />
+        android:textSize="16sp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
