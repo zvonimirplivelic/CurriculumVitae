@@ -1,7 +1,11 @@
 <resources>
-    <string name="app_name">CurriculumVitae</string>
+    <!--    Main Activity-->
+    <string name="app_name">Curriculum Vitae</string>
+    <string name="contact_me_btn">Contact Me</string>
 
     <!--    Personal Information-->
+    <string name="personal_information_card_title">Personal information</string>
+    <string name="personal_information_expand_button">Personal information expand button</string>
     <string name="personal_info_name">Name: Zvonimir Plivelić</string>
     <string name="personal_info_address">Address: Golska 21, 10040 Zagreb</string>
     <string name="personal_info_phone">Phone: +385955495228</string>
@@ -33,19 +37,19 @@
     <string name="card_view_education_title">Education</string>
     <string name="education_expand_button">Education expand button</string>
 
-    <!--    Education1 duration-->
+    <!--    Education1-->
     <string name="education1_duration">May 2018 - March 2020</string>
     <string name="education1_name">Algebra, Zagreb</string>
     <string name="education1_description">Mobile applications development</string>
     <string name="education1_skills">Skills learned:\n • Basics of Java for Android\n • Intro to Android programming\n • SQL for Android programming\n • Developing applications for Android platform\n • Graphics and game development basics</string>
 
-    <!--    Education2 duration-->
+    <!--    Education2-->
     <string name="education2_duration">2009 - 2017</string>
     <string name="education2_name">Faculty of transport and traffic science,\nUniversity of Zagreb</string>
     <string name="education2_description">Master in urban traffic and transport engineering</string>
     <string name="education2_skills">Skills learned:\n • Managing traffic in urban environment\n • Managing transport demand in urban environment\n • Intelligent transport systems\n • Road transport telematics\n • Traffic system planing in urban environment</string>
 
-    <!--    Education3 duration-->
+    <!--    Education3-->
     <string name="education3_duration">September 2004 - May 2009</string>
     <string name="education3_name">High School Sesvete</string>
     <string name="education3_description">Computer technician</string>

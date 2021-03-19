@@ -5,40 +5,40 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/tvDurationEducation1"
+        android:id="@+id/tvEducationDuration1"
         style="@style/TextViewDuration"
         android:text="@string/education1_duration"
-        app:layout_constraintBottom_toBottomOf="@id/tvSchoolName1"
+        app:layout_constraintBottom_toBottomOf="@id/tvEducationName1"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toLeftOf="@id/tvSchoolName1"
-        app:layout_constraintTop_toTopOf="@id/tvSchoolName1" />
+        app:layout_constraintRight_toLeftOf="@id/tvEducationName1"
+        app:layout_constraintTop_toTopOf="@id/tvEducationName1" />
 
     <TextView
-        android:id="@+id/tvSchoolName1"
+        android:id="@+id/tvEducationName1"
         style="@style/CardViewName"
         android:text="@string/education1_name"
-        app:layout_constraintLeft_toRightOf="@id/tvDurationEducation1"
+        app:layout_constraintLeft_toRightOf="@id/tvEducationDuration1"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation1"
+        app:layout_constraintBottom_toTopOf="@id/tvEducationDescription1"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/tvDescriptionEducation1"
+        android:id="@+id/tvEducationDescription1"
         style="@style/CardViewDescription"
         android:text="@string/education1_description"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/tvDescriptionEducation1"
-        app:layout_constraintTop_toBottomOf="@id/tvDurationEducation1" />
+        app:layout_constraintBottom_toTopOf="@id/tvEducationDescription1"
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDuration1" />
 
     <TextView
-        android:id="@+id/tvSkillsEducation1"
+        android:id="@+id/tvEducationSkills1"
         style="@style/CardViewDetails"
         android:text="@string/education1_skills"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvDescriptionEducation1" />
+        app:layout_constraintTop_toBottomOf="@id/tvEducationDescription1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

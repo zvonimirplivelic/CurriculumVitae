@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="collapsingToolbarLayoutTitleColor" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
     <style name="PersonalInformationText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -11,7 +17,7 @@
     <style name="CardViewTitle">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">0dp</item>
-        <item name="android:background">@color/design_default_color_primary_variant</item>
+        <item name="android:background">@color/blue</item>
         <item name="android:gravity">center_vertical</item>
         <item name="android:paddingStart">16dp</item>
         <item name="android:textColor">@color/black</item>
@@ -21,7 +27,7 @@
     <style name="CardViewImageButton">
         <item name="android:layout_width">48dp</item>
         <item name="android:layout_height">48dp</item>
-        <item name="android:background">@color/design_default_color_primary_variant</item>
+        <item name="android:background">@color/blue</item>
     </style>
 
     <style name="CardViewLinearLayout">

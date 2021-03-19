@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.RotateAnimation
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.cardview.widget.CardView
@@ -14,28 +17,68 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val workExperienceCard: CardView = findViewById(R.id.workExperienceCard)
-        val educationCard: CardView = findViewById(R.id.educationCard)
-        val personalSkillsCard: CardView = findViewById(R.id.personalSkillsCard)
+        val personalInformationCard: CardView =
+            findViewById(R.id.personalInformationCard)
+        val workExperienceCard: CardView =
+            findViewById(R.id.workExperienceCard)
+        val educationCard: CardView =
+            findViewById(R.id.educationCard)
+        val personalSkillsCard: CardView =
+            findViewById(R.id.personalSkillsCard)
 
-        val workExperienceExpandable: LinearLayout = findViewById(R.id.expandableWorkExperience)
-        val educationExpandable: LinearLayout = findViewById(R.id.expandableEducation)
-        val personalSkillsExpandable: LinearLayout = findViewById(R.id.expandablePersonalSkills)
+        val personalInformationExpandable: LinearLayout =
+            findViewById(R.id.expandablePersonalInformation)
+        val workExperienceExpandable: LinearLayout =
+            findViewById(R.id.expandableWorkExperience)
+        val educationExpandable: LinearLayout =
+            findViewById(R.id.expandableEducation)
+        val personalSkillsExpandable: LinearLayout =
+            findViewById(R.id.expandablePersonalSkills)
 
-        val workExperienceImageButton: ImageButton = findViewById(R.id.workExperienceImageButton)
-        val educationCardImageButton: ImageButton = findViewById(R.id.educationImageButton)
-        val personalSkillsCardImageButton: ImageButton = findViewById(R.id.personalSkillsImageButton)
+        val personalInformationImageButton: ImageButton =
+            findViewById(R.id.personalInformationImageButton)
+        val workExperienceImageButton: ImageButton =
+            findViewById(R.id.workExperienceImageButton)
+        val educationCardImageButton: ImageButton =
+            findViewById(R.id.educationImageButton)
+        val personalSkillsCardImageButton: ImageButton =
+            findViewById(R.id.personalSkillsImageButton)
+
+        val contactMeButton: Button =
+            findViewById(R.id.contactMeBtn)
+
+        personalInformationImageButton.setOnClickListener {
+            expandCardView(
+                personalInformationImageButton,
+                personalInformationExpandable,
+                personalInformationCard
+            )
+        }
 
         workExperienceImageButton.setOnClickListener {
-            expandCardView(workExperienceImageButton, workExperienceExpandable, workExperienceCard)
+            expandCardView(
+                workExperienceImageButton,
+                workExperienceExpandable,
+                workExperienceCard)
         }
 
         educationCardImageButton.setOnClickListener {
-            expandCardView(educationCardImageButton, educationExpandable, educationCard)
+            expandCardView(
+                educationCardImageButton,
+                educationExpandable,
+                educationCard)
         }
 
         personalSkillsCardImageButton.setOnClickListener {
-            expandCardView(personalSkillsCardImageButton, personalSkillsExpandable, personalSkillsCard)
+            expandCardView(
+                personalSkillsCardImageButton,
+                personalSkillsExpandable,
+                personalSkillsCard
+            )
+        }
+
+        contactMeButton.setOnClickListener{
+
         }
     }
 
