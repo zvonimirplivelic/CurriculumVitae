@@ -1,16 +1,18 @@
 package com.zvonimirplivelic.curriculumvitae
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.View
-import android.view.animation.Animation
-import android.view.animation.RotateAnimation
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
+import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import de.cketti.mailto.EmailIntentBuilder
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -59,14 +61,16 @@ class MainActivity : AppCompatActivity() {
             expandCardView(
                 workExperienceImageButton,
                 workExperienceExpandable,
-                workExperienceCard)
+                workExperienceCard
+            )
         }
 
         educationCardImageButton.setOnClickListener {
             expandCardView(
                 educationCardImageButton,
                 educationExpandable,
-                educationCard)
+                educationCard
+            )
         }
 
         personalSkillsCardImageButton.setOnClickListener {
@@ -77,8 +81,21 @@ class MainActivity : AppCompatActivity() {
             )
         }
 
-        contactMeButton.setOnClickListener{
+        contactMeButton.setOnClickListener {
+            ContactMeDialog(this, object : ContactMeDialogListener {
+                override fun contactMeEmail() {
+                    EmailIntentBuilder.from(applicationContext)
+                        .to("zvonimirplivelic91@gmail.com")
+                        .subject("Job offer")
+                        .start()
+                }
 
+                override fun contactMePhone() {
+                    val intent = Intent(Intent.ACTION_DIAL)
+                    intent.data = Uri.parse("tel:0955495228")
+                    startActivity(intent)
+                }
+            }).show()
         }
     }
 
