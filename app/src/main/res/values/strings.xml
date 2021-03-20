@@ -61,4 +61,5 @@
     <string name="personal_skills_languages">Native language: Croatian\nForeign language: English</string>
     <string name="personal_skills_digital">Digital skills:\n • MS Office tools\n • Java\n • Kotlin\n • Git VCS</string>
     <string name="personal_skills_other">Other skills and hobbies:\n • Fitness\n • Drivers licence(AM, B)</string>
+    <string name="contact_dialog_description">Please, choose how do you want to contact me</string>
 </resources>

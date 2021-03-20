@@ -45,4 +45,7 @@ dependencies {
 
     // Circle Image View
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    // Email Intent Builder
+    implementation 'de.cketti.mailto:email-intent-builder:2.0.0'
 }
