@@ -22,7 +22,8 @@
             app:collapsedTitleGravity="center"
             app:collapsedTitleTextAppearance="@style/collapsingToolbarLayoutTitleColor"
             app:contentScrim="@color/blue"
-            app:expandedTitleMargin="16dp"
+            app:expandedTitleMargin="8dp"
+            app:expandedTitleGravity="bottom|center"
             app:expandedTitleTextAppearance="@style/collapsingToolbarLayoutTitleColor"
             app:layout_scrollFlags="scroll|snap|exitUntilCollapsed"
             app:title="@string/app_name">
@@ -75,12 +76,13 @@
     <Button
         android:id="@+id/contactMeBtn"
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="wrap_content"
         android:layout_margin="8dp"
+        android:padding="8dp"
         android:textStyle="bold"
         android:elevation="4dp"
         android:text="@string/contact_me_btn"
         android:textColor="@color/black"
         android:layout_gravity="bottom"
-        android:textSize="16sp" />
+        android:textSize="20sp" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

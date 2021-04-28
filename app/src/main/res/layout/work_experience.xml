@@ -16,14 +16,14 @@
             android:id="@+id/workExperienceTitle"
             style="@style/CardViewTitle"
             android:text="@string/card_view_work_experience_title"
-            app:layout_constraintBottom_toBottomOf="@id/workExperienceImageButton"
-            app:layout_constraintEnd_toStartOf="@+id/workExperienceImageButton"
+            app:layout_constraintBottom_toBottomOf="@id/workExperienceImageView"
+            app:layout_constraintEnd_toStartOf="@+id/workExperienceImageView"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/workExperienceImageButton" />
+            app:layout_constraintTop_toTopOf="@id/workExperienceImageView" />
 
-        <ImageButton
-            android:id="@+id/workExperienceImageButton"
+        <ImageView
+            android:id="@+id/workExperienceImageView"
             style="@style/CardViewImageButton"
             android:contentDescription="@string/work_experience_expand_button"
             android:src="@drawable/ic_down"

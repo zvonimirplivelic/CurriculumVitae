@@ -3,8 +3,8 @@ package com.zvonimirplivelic.curriculumvitae
 import android.content.Context
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatDialog
-import de.cketti.mailto.EmailIntentBuilder
 
 
 class ContactMeDialog(
@@ -18,6 +18,11 @@ class ContactMeDialog(
 
         val ibEmail: ImageButton? = findViewById(R.id.ibEmail)
         val ibPhone: ImageButton? = findViewById(R.id.ibPhone)
+        val ivCloseDialog: ImageView? = findViewById(R.id.ivCloseDialog)
+
+        ivCloseDialog!!.setOnClickListener {
+            dismiss()
+        }
 
         ibEmail!!.setOnClickListener {
             onContactMeDialogListener.contactMeEmail()

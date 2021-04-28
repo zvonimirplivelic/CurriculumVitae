@@ -17,15 +17,15 @@
             android:id="@+id/personalSkillsTitle"
             style="@style/CardViewTitle"
             android:text="@string/card_view_personal_skills_title"
-            app:layout_constraintBottom_toBottomOf="@id/personalSkillsImageButton"
-            app:layout_constraintEnd_toStartOf="@+id/personalSkillsImageButton"
+            app:layout_constraintBottom_toBottomOf="@id/personalSkillsImageView"
+            app:layout_constraintEnd_toStartOf="@+id/personalSkillsImageView"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/personalSkillsImageButton"
+            app:layout_constraintTop_toTopOf="@id/personalSkillsImageView"
             tools:ignore="RtlSymmetry" />
 
-        <ImageButton
-            android:id="@+id/personalSkillsImageButton"
+        <ImageView
+            android:id="@+id/personalSkillsImageView"
             style="@style/CardViewImageButton"
             android:contentDescription="@string/personal_skills_expand_button"
             android:src="@drawable/ic_down"

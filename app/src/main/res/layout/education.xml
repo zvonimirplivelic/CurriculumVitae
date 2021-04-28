@@ -16,14 +16,14 @@
             android:id="@+id/educationTitle"
             style="@style/CardViewTitle"
             android:text="@string/card_view_education_title"
-            app:layout_constraintBottom_toBottomOf="@id/educationImageButton"
-            app:layout_constraintEnd_toStartOf="@+id/educationImageButton"
+            app:layout_constraintBottom_toBottomOf="@id/educationImageView"
+            app:layout_constraintEnd_toStartOf="@+id/educationImageView"
             app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@id/educationImageButton" />
+            app:layout_constraintTop_toTopOf="@id/educationImageView" />
 
-        <ImageButton
-            android:id="@+id/educationImageButton"
+        <ImageView
+            android:id="@+id/educationImageView"
             style="@style/CardViewImageButton"
             android:contentDescription="@string/education_expand_button"
             android:src="@drawable/ic_down"

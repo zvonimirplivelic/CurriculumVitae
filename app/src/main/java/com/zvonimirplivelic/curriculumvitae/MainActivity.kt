@@ -7,7 +7,7 @@ import android.transition.AutoTransition
 import android.transition.TransitionManager
 import android.view.View
 import android.widget.Button
-import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
@@ -37,45 +37,45 @@ class MainActivity : AppCompatActivity() {
         val personalSkillsExpandable: LinearLayout =
             findViewById(R.id.expandablePersonalSkills)
 
-        val personalInformationImageButton: ImageButton =
-            findViewById(R.id.personalInformationImageButton)
-        val workExperienceImageButton: ImageButton =
-            findViewById(R.id.workExperienceImageButton)
-        val educationCardImageButton: ImageButton =
-            findViewById(R.id.educationImageButton)
-        val personalSkillsCardImageButton: ImageButton =
-            findViewById(R.id.personalSkillsImageButton)
+        val personalInformationImageView: ImageView =
+            findViewById(R.id.personalInformationImageView)
+        val workExperienceImageView: ImageView =
+            findViewById(R.id.workExperienceImageView)
+        val educationCardImageView: ImageView =
+            findViewById(R.id.educationImageView)
+        val personalSkillsCardImageView: ImageView =
+            findViewById(R.id.personalSkillsImageView)
 
         val contactMeButton: Button =
             findViewById(R.id.contactMeBtn)
 
-        personalInformationImageButton.setOnClickListener {
+        personalInformationCard.setOnClickListener {
             expandCardView(
-                personalInformationImageButton,
+                personalInformationImageView,
                 personalInformationExpandable,
                 personalInformationCard
             )
         }
 
-        workExperienceImageButton.setOnClickListener {
+        workExperienceCard.setOnClickListener {
             expandCardView(
-                workExperienceImageButton,
+                workExperienceImageView,
                 workExperienceExpandable,
                 workExperienceCard
             )
         }
 
-        educationCardImageButton.setOnClickListener {
+        educationCard.setOnClickListener {
             expandCardView(
-                educationCardImageButton,
+                educationCardImageView,
                 educationExpandable,
                 educationCard
             )
         }
 
-        personalSkillsCardImageButton.setOnClickListener {
+        personalSkillsCard.setOnClickListener {
             expandCardView(
-                personalSkillsCardImageButton,
+                personalSkillsCardImageView,
                 personalSkillsExpandable,
                 personalSkillsCard
             )
@@ -95,23 +95,27 @@ class MainActivity : AppCompatActivity() {
                     intent.data = Uri.parse("tel:0955495228")
                     startActivity(intent)
                 }
+
+                override fun closeDialog() {
+                    this.closeDialog()
+                }
             }).show()
         }
     }
 
     private fun expandCardView(
-        expandButton: ImageButton,
+        expandImage: ImageView,
         expandableLayout: LinearLayout,
         expandableCard: CardView
     ) {
         if (expandableLayout.visibility == View.GONE) {
             TransitionManager.beginDelayedTransition(expandableCard, AutoTransition())
             expandableLayout.visibility = View.VISIBLE
-            expandButton.setImageResource(R.drawable.ic_up)
+            expandImage.setImageResource(R.drawable.ic_up)
         } else {
             TransitionManager.beginDelayedTransition(expandableCard, AutoTransition())
             expandableLayout.visibility = View.GONE
-            expandButton.setImageResource(R.drawable.ic_down)
+            expandImage.setImageResource(R.drawable.ic_down)
         }
     }
 }
